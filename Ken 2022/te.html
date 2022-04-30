@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="tet.css">
+</head>
+
+<body>
+
+    <!-------------------header------------------>
+    <div>
+        <header>
+            <div class="container">
+                <nav class="nav">
+                    <img src="logo.png" id="logoimg"><a href="index.html"></a></img>
+                    <ul class="nav-list">
+                        <li>
+                            <a href="index.html" class="nav-link">About</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link">Services</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link">Products</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link">Infrastructure</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </div>
+
+    <div id="luxy">
+        <!------------------Hero section----------------->
+        <div>
+            <section class="hero">
+                <div></div>
+                <div></div>
+            </section>
+        </div>
+
+
+        <!------------------Section 2----------------->
+        <div>
+            <section class="demo-content">
+                <div class="luxy-el" data-speed-y="-10" data-offset="-50">
+                    <div class="btn1">Lorem ipsum dolor sit amet.</div>
+                    <div class="btn2">Lorem ipsum dolor sit amet.</div>
+                    <div class="btn3">Lorem ipsum dolor sit amet.</div>
+                    <div class="btn4">Lorem ipsum dolor sit amet.</div>
+                    <div class="btn5">Lorem ipsum dolor sit amet.</div>
+                    <div class="btn6">Lorem ipsum dolor sit amet.</div>
+                    <div class="btn7">Lorem ipsum dolor sit amet.</div>
+                </div>
+                <div>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus distinctio incidunt dolorem
+                        facere quis saepe quae recusandae deleniti beatae animi!</p>
+                </div>
+            </section>
+        </div>
+
+
+        <!------------------Section 3----------------->
+        <div>
+            <section class="section3">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In rerum natus adipisci qui repellendus sit
+                    voluptate facilis libero! Temporibus, porro?</p>
+            </section>
+        </div>
+
+
+        <!------------------Section 4----------------->
+        <div>
+            <section class="section4">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In rerum natus adipisci qui repellendus sit
+                    voluptate facilis libero! Temporibus, porro?</p>
+            </section>
+        </div>
+
+        <!------------------footer----------------->
+        <div>
+            <section class="footer">
+                <footer>
+                    <p class="footer1">Footer</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In rerum natus adipisci qui repellendus
+                        sit voluptate facilis libero! Temporibus, porro?</p>
+                </footer>
+
+            </section>
+        </div>
+
+    </div>
+
+    <!----------------------Scripts---------------------->
+
+    <!--------------For navbar------------->
+    <script>
+        window.addEventListener('scroll', function () {
+            let header = document.querySelector('header');
+            let windowPosition = window.scrollY > 0;
+            header.classList.toggle('scrolling-active', windowPosition);
+        })
+    </script>
+
+    <!-----------For Scrolling------------->
+    <script src="luxy.js" charset="utf-8"></script>
+    <script>
+        luxy.init({
+            wrapper: '#luxy',
+            targets: '.luxy-el',
+            wrapperSpeed: 0.04
+        });
+    </script>
+
+
+</body>
